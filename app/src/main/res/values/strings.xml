@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">BasketBallScore</string>
+    <string name="team_1">Team 1</string>
+    <string name="team_2">Team 2</string>
+    <string name="team_1_score">0</string>
+    <string name="team_2_score">0</string>
+    <string name="Reset">Reset</string>
+    <string name="free_throw">Free throw</string>
+    <string name="score_2">Score +2</string>
+    <string name="score_3">Score +3</string>
+    <string name="send_score">Send winner Team</string>
+</resources>

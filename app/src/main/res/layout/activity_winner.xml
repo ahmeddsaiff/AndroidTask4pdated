@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WinnerActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text=" The Winner Team is"
+            android:textColor="@color/black"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/svg_cup"
+            android:layout_width="220dp"
+            android:layout_height="200dp"
+            android:src="@drawable/ic_trophy_winner_svgrepo_com"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Label" />
+
+        <TextView
+            android:id="@+id/winnerLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Winner Team"
+            android:textColor="@color/black"
+            android:textSize="40dp"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/svg_cup" />
+
+        <Button
+            android:id="@+id/SendButton"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="140dp"
+            android:text="@string/send_score"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textSize="22dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/winnerLabel" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
