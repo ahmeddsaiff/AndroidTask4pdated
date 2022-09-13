@@ -34,6 +34,7 @@ class WinnerActivity : AppCompatActivity() {
         }
     }
 
+ //not working
 //    override fun onBackPressed() {
 //        super.onBackPressed()
 //       val intent: Intent = Intent(this, MainActivity::class.java)
