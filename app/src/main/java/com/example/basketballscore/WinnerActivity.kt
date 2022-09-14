@@ -9,8 +9,8 @@ import android.widget.TextView
 
 class WinnerActivity : AppCompatActivity() {
 
-    private lateinit var scoreTeam1: TextView
-    private lateinit var scoreTeam2: TextView
+//    private lateinit var scoreTeam1: TextView
+//    private lateinit var scoreTeam2: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

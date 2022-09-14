@@ -12,6 +12,7 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var scoreTeam1: TextView
     private lateinit var scoreTeam2: TextView
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -58,18 +59,19 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    //opening winner screen function
     private fun OpenWinnerActivity(winnerTeam: String) {
         val intent: Intent = Intent(this, WinnerActivity::class.java)
         intent.putExtra("WinnerTeam", winnerTeam)
         startActivity(intent)
     }
 
+    //onSave & onRestore are functions to save the values even when rotating the phone
     override fun onSaveInstanceState(outState: Bundle) {
         super.onSaveInstanceState(outState)
         outState.putString("Score_Team1", scoreTeam1.text.toString())
         outState.putString("Score_Team2", scoreTeam2.text.toString())
     }
-
     override fun onRestoreInstanceState(savedInstanceState: Bundle) {
         super.onRestoreInstanceState(savedInstanceState)
         scoreTeam1.text = savedInstanceState.getString("Score_Team1")
